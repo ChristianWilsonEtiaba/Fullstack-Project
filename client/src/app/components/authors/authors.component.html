@@ -1,0 +1,32 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            <div class="card">
+                <div class="card-body text-center">
+                    <span class="titulo">AUTHORS</span>
+                    <button class="btn btn-primary float-start" routerLink="/books">BOOKS</button>
+
+                    <table *ngIf="listAuthors.length > 0" class="table table-striped mt-3">
+                        <thead>
+                          <tr>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let author of listAuthors">
+                            <td>{{ author.firstName }}</td>
+                            <td>{{ author.lastName }}</td>
+                            <td>
+                                <i [routerLink]="['/author', author._id]" class="fas fa-edit text-primary"></i>
+                              </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <h5 style="text-align: start; margin-top: 10px;" *ngIf="listAuthors.length == 0">There are no authors to present</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+            <div class="card">
+                <div class="card-body text-center">
+                    <span class="titulo"> {{ titulo | uppercase }}</span>
+                    <form class="mt-3" [formGroup]="bookForm" (ngSubmit)="agregarBook()">
+                        <div class="mb-3">
+                            <input type="text" formControlName="book" class="form-control form-control-lg"
+                                placeholder="Book">
+                            <div class="text-danger"
+                                *ngIf="bookForm.get('book')?.hasError('required') && bookForm.get('book')?.touched">
+                                <span>The book <strong>is required</strong></span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" formControlName="isbn" class="form-control form-control-lg"
+                                placeholder="ISBN">
+                            <div class="text-danger"
+                                *ngIf="bookForm.get('isbn')?.hasError('required') && bookForm.get('isbn')?.touched">
+                                <span>The category <strong>is required</strong></span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" formControlName="author" class="form-control form-control-lg"
+                                placeholder="Author">
+                            <div class="text-danger"
+                                *ngIf="bookForm.get('author')?.hasError('required') && bookForm.get('author')?.touched">
+                                <span>The author <strong>is required</strong></span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <button routerLink="/books" class="btn btn-secondary btn-lg float-start">VOLVER</button>
+                            <button type="submit" [disabled]="bookForm.invalid" class="btn btn-success btn-lg float-end">ACEPTAR</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
