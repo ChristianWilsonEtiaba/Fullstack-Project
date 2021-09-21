@@ -4,8 +4,7 @@
   "description": "MEAN API",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon .",
-    "start": "node index.js"
+    "dev": "nodemon ."
   },
   "author": "Christian Wilson Etiaba",
   "license": "ISC",

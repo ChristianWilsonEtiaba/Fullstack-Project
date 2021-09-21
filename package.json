@@ -1,10 +1,9 @@
 {
   "name": "christianwilson-fullstack-challenge",
   "version": "1.0.0",
-  "description": "MEAN API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +14,8 @@
   "bugs": {
     "url": "https://github.com/ChristianWilsonEtiaba/Fullstack-Project/issues"
   },
-  "homepage": "https://github.com/ChristianWilsonEtiaba/Fullstack-Project#readme"
+  "homepage": "https://github.com/ChristianWilsonEtiaba/Fullstack-Project#readme",
+  "devDependencies": {
+    "webpack": "^5.53.0"
+  }
 }
