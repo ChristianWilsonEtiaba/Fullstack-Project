@@ -1,0 +1,19 @@
+{
+  "name": "christianwilson-fullstack-challenge",
+  "version": "1.0.0",
+  "description": "MEAN API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChristianWilsonEtiaba/Fullstack-Project.git"
+  },
+  "author": "Christian Wilson Etiaba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChristianWilsonEtiaba/Fullstack-Project/issues"
+  },
+  "homepage": "https://github.com/ChristianWilsonEtiaba/Fullstack-Project#readme"
+}
